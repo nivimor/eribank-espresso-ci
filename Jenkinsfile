@@ -5,7 +5,7 @@ node {
   // Checkout code from repository and update any submodules
   checkout([$class: 'GitSCM', branches: [[name: '**']],
     doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'LocalBranch', localBranch: "**"]],
-    submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/nivimor/eribank-espresso.git']]])
+    submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/nivimor/eribank-espresso.git-ci']]])
 
     def branchName
     if(isUnix()){
