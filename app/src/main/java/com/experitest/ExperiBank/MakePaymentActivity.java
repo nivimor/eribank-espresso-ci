@@ -116,7 +116,7 @@ public class MakePaymentActivity extends Activity {
 				SharedPreferences.Editor prefsEditr = userPreferences.edit();
 				prefsEditr.putBoolean("Refilled", true);
 				prefsEditr.putFloat("Balance", balance - amount);
-				//prefsEditr.commit();
+				prefsEditr.commit();
 				finish();
 			}
 		}).setNegativeButton("No", new DialogInterface.OnClickListener() {
